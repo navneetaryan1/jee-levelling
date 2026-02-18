@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JEE Leveling System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>⚔️ JEE LEVELING SYSTEM</h1>
+  <p class="subtitle">April Attempt • 30 Day Mission</p>
+
+  <!-- STATUS CARD -->
+  <div class="card">
+    <h2>Player Status</h2>
+    <p>Level: <span id="level">1</span></p>
+    <p>EXP: <span id="exp">0</span>/100</p>
+    <progress id="expBar" value="0" max="100"></progress>
+  </div>
+
+  <!-- STUDY QUEST -->
+  <div class="card">
+    <h2>📘 Study Quest</h2>
+    <button onclick="studyQuest()">Complete Study (+20 EXP)</button>
+  </div>
+
+  <!-- EXERCISE QUEST -->
+  <div class="card">
+    <h2>🧘 Mini Exercise</h2>
+    <button onclick="exerciseQuest()">Stretching (+5 EXP)</button>
+  </div>
+
+  <!-- FUN MODE -->
+  <div class="card">
+    <h2>😂 Fun Mode</h2>
+    <button onclick="funJoke()">Get a JEE Joke</button>
+    <p id="joke"></p>
+  </div>
+
+  <!-- AI MENTOR PLACEHOLDER -->
+  <div class="card">
+    <h2>🤖 Ask the System</h2>
+    <p class="small">
+      (AI mentor will be added here – strategy, doubts, planning)
+    </p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
